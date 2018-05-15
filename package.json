@@ -1,0 +1,14 @@
+{
+  "name": "aws_node_js",
+  "version": "1.0.0",
+  "description": "aws practice",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Lewis Watson",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.239.1"
+  }
+}
