@@ -10,23 +10,23 @@ $ npm install
 You can insert your AWS secret key, access key and region into a config.json file, or save them in ~/.aws/credentials (MacOS and Linux). You should then be able to use commands such as below:
 ```diff
 $ node ec2_get_instance_state.js your_EC2_instance_ID
-+ // Success. State:  stopped
+ // Success. State:  stopped
 
 $ node ec2_start_stop_instances.js start your_EC2_instance_ID
-+ // Success [ { CurrentState: { Code: 0, Name: 'pending' },
-+ //    InstanceId: 'your_EC2_instance_ID',
-+ //    PreviousState: { Code: 80, Name: 'stopped' } } ]
+ // Success [ { CurrentState: { Code: 0, Name: 'pending' },
+ //    InstanceId: 'your_EC2_instance_ID',
+ //    PreviousState: { Code: 80, Name: 'stopped' } } ]
 
 $ node ec2_get_instance_state.js your_EC2_instance_ID
-+ // Success. State:  running
+ // Success. State:  running
 
 $ node ec2_start_stop_instances.js stop your_EC2_instance_ID
-+ // Success [ { CurrentState: { Code: 64, Name: 'stopping' },
-+ //    InstanceId: 'your_EC2_instance_ID',
-+ //    PreviousState: { Code: 16, Name: 'running' } } ]
+ // Success [ { CurrentState: { Code: 64, Name: 'stopping' },
+ //    InstanceId: 'your_EC2_instance_ID',
+ //    PreviousState: { Code: 16, Name: 'running' } } ]
 
 $ node ec2_get_instance_state.js your_EC2_instance_ID
-+ // Success. State:  stopping
+ // Success. State:  stopping
 
 $ node ec2_get_instance_state.js your_EC2_instance_ID
 + // Success. State:  stopped
